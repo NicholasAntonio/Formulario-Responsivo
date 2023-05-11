@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap');
+
+*{
+    font-family: 'Rubik', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;     
+    scroll-behavior: smooth;
+}
+
+:root{
+    --color-blue-bold:#2f64ee;
+    --color-white: #f5f5f5;
+
+}
+
+body{
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    background-image: linear-gradient(to bottom, #051937, #082854, #0b3872, #104992, #155ab3);
+}
+
+.container{
+    max-width: 700px;
+    width:100%;
+    background: var(--color-white);
+    padding: 25px 30px;
+    border-radius: 10px;
+}
+
+.container .title{
+    font-size: 25px;
+    font-weight: 800;
+    position: relative;
+}
+.container .title:before{
+    content:'';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 30px;
+    background: linear-gradient(to bottom, #051937, #082854, #0b3872, #104992, #155ab3);
+}
+
+.container form .form-body{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px 0 12px 0;
+}
+
+.container form .form-body .input-box{
+    margin-bottom: 15px;
+    width: calc(100%/2 - 20px);
+}
+
+.container form .form-body label{
+    font-size: 18px;
+    font-weight: 600;
+
+}
+.container form .form-body .digit {
+    display: block;
+    height: 45px;
+    width: 100%;
+    border: none;
+    background: transparent;
+    font-weight: 500;
+    margin-bottom: 5px;
+    border-bottom: 2px solid black;
+    outline: none;
+    transition: all 0.3s ease;
+}
+.container form .form-body input:focus,
+.container form .form-body input:valid{
+    border-color: #0e6fee;
+}
+
+form  .gender-title{
+    font-size: 18px;
+    font-weight: 600;
+}
+
+form .gender{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;  
+}
+
+form .button{
+    height: 45px;
+    margin: 45px 0;
+}
+ form .button input{
+    height:100%;
+    width: 100%;
+    outline: none;
+    color: var(--color-white);
+    background: linear-gradient(to bottom, #051937, #082854, #0b3872, #104992, #155ab3);
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s ease-in;
+ }
+ form .button input:hover{
+    color: rgb(10, 10, 10);
+    background: linear-gradient(to right top, #091a34, #1d315a, #364983, #5461ae, #767ada);
+ }
+
+ @media(max-width:584px){
+    .container{
+        max-width: 100%px;
+    }
+    .container form .form-body .input-box{
+        margin-bottom: 15px;
+        width: 100%;
+    }
+    form .gender{
+        width: 100%;  
+    }
+    .container form .form-body{
+        max-height: 300px;
+        overflow-y:scroll;
+    }
+    .form-body::-webkit-scrollbar{
+        width:0;
+    }
+ }

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Formulário Responsivo</title>
+</head>
+<body>
+    <main class="container">
+        <div class="title">Dados Cadastrais</div>
+        <form action="#" method="get">
+            <div class="form-body">
+                <div class="input-box">
+                    <label for="lname">Nome completo</label>
+                    <input class="digit" type="text" placeholder="Insira seu nome" required >
+                </div>
+                <div class="input-box">
+                    <label for="lusername">Nome de usuário</label>
+                    <input class="digit" type="text" placeholder="Insira seu nome de usuário" required >
+                </div>
+                <div class="input-box">
+                    <label for="lemail">E-mail</label>
+                    <input class="digit" type="text" placeholder="Insira seu E-mail" required >
+                </div>
+                <div class="input-box">
+                    <label for="lphone">Celular</label>
+                    <input class="digit" type="tel" placeholder="(xx) xxxx-xxxx" required >
+                </div>
+                <div class="input-box">
+                    <label for="lpassword">Insira sua senha</label>
+                    <input class="digit" type="text" placeholder="Insira sua senha" required >
+                </div>
+                <div class="input-box">
+                    <label for="lconfirmpassword">Confirme sua senha</label>
+                    <input class="digit" type="text" placeholder="Confirme sua senha" required >
+                </div>
+              </div>  
+            <div class="gender">
+                    <div class="gender-title">Gênero</div>
+                    <div class="gender-type">
+                        <label for="masc">Masculino</label>
+                        <input type="radio" name="genderT" id="masc" checked>
+                    </div>
+                    <div class="gender-type">
+                        <label for="fem">Feminino</label>
+                        <input type="radio" name="genderT" id="fem">
+                    </div>
+                    <div class="gender-type">
+                        <label for="notdec">Prefiro não declarar</label>
+                        <input type="radio" name="genderT" id="notdec">
+                    </div>
+            </div>
+                <div class="button">
+                    <input type="submit" value="Registrar">
+                </div>
+            </div>
+        </form>
+
+    </main>
+</body>
+</html>
